@@ -1,0 +1,3 @@
+#!/Users/carolynchen/allstarpredict/scripts/nba_env/bin/python
+from numba.pycc import main
+main()
