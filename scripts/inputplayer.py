@@ -1,13 +1,14 @@
 from nba_api.stats.endpoints import playercareerstats
 from nba_api.stats.static import players
 from rapidfuzz import process
+# import openai
 
 def get_best_match(player_name):
     all_players = [player['full_name'] for player in players.get_players()]
 
     match, sim_score, _ = process.extractOne(player_name, all_players)
 
-    if sim_score >= 70:
+    if sim_score >= 50:
         return match
     return None
 
@@ -45,7 +46,12 @@ def main():
     
     # Display the career stats
     print(f"\nCareer stats for {best_match}:")
-    print(career_df)
+
+    columns_to_display = ["SEASON_ID", "TEAM_ABBREVIATION", "GP", "GS", "PTS", "AST", "REB", "AST", "STL", "BLK", "TOV", "PF", "PTS"]
+    
+    print(f"\nStats for {best_match.title()}:\n")
+    print(career_df[columns_to_display].to_string(index=False))
+    # print(career_df)
 
 
 if __name__ == "__main__":
