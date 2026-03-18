@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0d0d0d;
+  color: #e8e8e8;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  display: block;
+}
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-ball {
+  font-size: 2.2rem;
+}
+
+.logo-text {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.logo-accent {
+  color: #f05d23;
+}
+
+.tagline {
+  color: #777;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* ── Main ── */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ── Loading ── */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: #aaa;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #333;
+  border-top-color: #f05d23;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Error ── */
+.error-card {
+  background: #1e0f0f;
+  border: 1px solid #5a1a1a;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  color: #e07070;
+  font-size: 0.95rem;
+}

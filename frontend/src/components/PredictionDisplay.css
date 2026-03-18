@@ -1,0 +1,39 @@
+.prediction {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 1.7;
+}
+
+.pred-h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.pred-h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f05d23;
+  margin-top: 0.5rem;
+}
+
+.pred-p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.pred-bold {
+  color: #e8e8e8;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.pred-li {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-left: 1.2rem;
+  list-style: disc;
+}

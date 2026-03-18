@@ -1,0 +1,61 @@
+.table-scroll {
+  overflow-x: auto;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.stats-table thead tr {
+  background: #1c1c1c;
+}
+
+.stats-table th {
+  padding: 0.65rem 0.9rem;
+  text-align: right;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid #222;
+}
+
+.stats-table th:first-child,
+.stats-table td:first-child {
+  text-align: left;
+}
+
+.stats-table td {
+  padding: 0.6rem 0.9rem;
+  text-align: right;
+  border-bottom: 1px solid #1e1e1e;
+  white-space: nowrap;
+  color: #d0d0d0;
+}
+
+.stats-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.stats-table tbody tr:hover td {
+  background: #1c1c1c;
+}
+
+.stats-table td.highlight {
+  font-weight: 700;
+  color: #f05d23;
+}
+
+.stats-table tr.win td:nth-child(3) {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.stats-table tr.loss td:nth-child(3) {
+  color: #e05050;
+  font-weight: 600;
+}
